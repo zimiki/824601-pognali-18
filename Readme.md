@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Екатерина Булыгина](https://up.htmlacademy.ru/adaptive/18/user/824601) .
-* Наставник: [Евгений Петров](https://htmlacademy.ru/profile/id617077) .
+* Студент: [Екатерина Булыгина](https://up.htmlacademy.ru/adaptive/18/user/824601).
+* Наставник: [Евгений Петров](https://htmlacademy.ru/profile/id617077).
 
 ---
 
@@ -15,7 +15,7 @@ _Не удаляйте и не обращайте внимание на файл
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
 
 ---
-
+п
 ### Памятка
 
 #### 1. Зарегистрируйтесь на Гитхабе
