@@ -16,9 +16,9 @@
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a>О сервисе</a></li>
-          <li class="site-list__item"><a>Направления</a></li>
-          <li class="site-list__item"><a>Попутчики</a></li>
+          <li class="site-list__item"><a href="#">О сервисе</a></li>
+          <li class="site-list__item"><a href="form.html">Направления</a></li>
+          <li class="site-list__item"><a href="catalog.html">Попутчики</a></li>
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
@@ -61,12 +61,10 @@
         <tr>
           <td class="intro__step-number">2</td>
           <td class="intro__step">Изучите идеи путешественников</td>
-
         </tr>
         <tr>
           <td class="intro__step-number">3</td>
           <td class="intro__step">Находите тех, кто похож на вас</td>
-
         </tr>
         <tr>
           <td class="intro__step-number">4</td>
@@ -136,61 +134,58 @@
       <b class="companions__description slogan">
         Теперь можно легко найти единомышленников!
       </b>
-      <div class="companions__profile user">
-        <h3 class="user__name"><a href="#">Таня Фирсова</a></h3>
-        <img class="user__photo user__photo--tanya" src="https://via.placeholder.com/150x150" width="150" height="150"
-          alt="Таня Фирсова">
-        <div class="user__level-wrapper">
-          <span class="user__level-value">99</span>
-          <span class="user__level">level</span>
-        </div>
-        <ul class="user__visit-list">
-          <li class="user__country flag flag--sri-lanka">Шри-Ланка</li>
-          <li class="user__country flag flag--thailand">Тайланд</li>
-          <li class="user__country flag flag--seychelles">Сейшелы</li>
-        </ul>
-        <ul class="user__tags-list">
-          <li class="user__tag">#ЗОЖ</li>
-          <li class="user__tag">#ПП</li>
-          <li class="user__tag">#Фитнес</li>
-          <li class="user__tag">#пляж</li>
-          <li class="user__tag">#ЗОЖ</li>
-          <li class="user__tag">#авокадо</li>
-          <li class="user__tag">#смузи</li>
-        </ul>
-        <ul class="user__move move">
-          <li class="move__item move__item--avia move__item--active">Самолет</li>
-          <li class="move__item move__item--bus">Автобус</li>
-          <li class="move__item move__item--bike">Велосипед</li>
-          <li class="move__item move__item--onfoot">Пешком</li>
-        </ul>
-      </div>
-      <div class="companions__profile user">
-        <h3 class="user__name"><a href="#">Петя Демин</a></h3>
-        <img class="user__photo user__photo--peter" src="https://via.placeholder.com/150x150" width="150" height="150"
-          alt="Петя Демин">
-        <div class="user__level-wrapper">
-          <span class="user__level-value">80</span>
-          <span class="user__level">level</span>
-        </div>
-        <ul class="user__visit-list">
-          <li class="user__country flag flag--belgium">Бельгия</li>
-          <li class="user__country flag flag--czech">Чехия</li>
-        </ul>
-        <ul class="user__tags-list">
-          <li class="user__tag">#бургер</li>
-          <li class="user__tag">#бар</li>
-          <li class="user__tag">#футбол</li>
-          <li class="user__tag">#концерт</li>
-          <li class="user__tag">#крафт</li> >
-        </ul>
-        <ul class="user__move move">
-          <li class="move__item move__item--avia move__item--active">Самолет</li>
-          <li class="move__item move__item--bus move__item--active">Автобус</li>
-          <li class="move__item move__item--bike">Велосипед</li>
-          <li class="move__item move__item--onfoot move__item--active">Пешком</li>
-        </ul>
-      </div>
+      <ul class="companions__list">
+        <li class="companions__profile">
+
+          <h3 class="companions__user-name"><a href="#">Таня Фирсова</a></h3>
+          <img class="companions__photo photo--tanya" src="https://via.placeholder.com/150x150" width="150"
+            height="150" alt="Таня Фирсова">
+          <div class="companions__level-wrapper">
+            <span class="companions__level-value">99</span>
+            <span class="companions__level">level</span>
+          </div>
+          <ul class="companions__visit-list">
+            <li class="companions__country flag flag--sri-lanka">Шри-Ланка</li>
+            <li class="companions__country flag flag--thailand">Тайланд</li>
+            <li class="companions__country flag flag--seychelles">Сейшелы</li>
+          </ul>
+          <p class="companions__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+          <ul class="companions__move move">
+            <li class="move__item move__item--avia move__item--active">Самолет</li>
+            <li class="move__item move__item--bus">Автобус</li>
+            <li class="move__item move__item--bike">Велосипед</li>
+            <li class="move__item move__item--onfoot">Пешком</li>
+          </ul>
+        </li>
+        <li class="companions__profile">
+          <h3 class="companions__user-name"><a href="#">Петя Демин</a></h3>
+          <img class="companions__photo photo--peter" src="https://via.placeholder.com/150x150" width="150"
+            height="150" alt="Петя Демин">
+          <div class="companions__level-wrapper">
+            <span class="companions__level-value">80</span>
+            <span class="companions__level">level</span>
+          </div>
+          <ul class="companions__visit-list">
+            <li class="companions__country flag flag--belgium">Бельгия</li>
+            <li class="companions__country flag flag--czech">Чехия</li>
+          </ul>
+          <ul class="companions__tags-list">
+            <li>#бургер</li>
+            <li>#бар</li>
+            <li>#футбол</li>
+            <li>#крафт</li>
+          </ul>
+          <ul class="companions__move move">
+            <li class="move__item move__item--avia move__item--active">Самолет</li>
+            <li class="move__item move__item--bus move__item--active">Автобус</li>
+            <li class="move__item move__item--bike">Велосипед</li>
+            <li class="move__item move__item--onfoot move__item--active">Пешком</li>
+          </ul>
+        </li>
+      </ul>
+
+
+
       <a class="companion__all button" href="catalog.html">Показать всех</a>
     </section>
 
