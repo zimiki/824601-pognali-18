@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
           </li>
           <li class="user-list__item">
             <span class="user-list__email">Почта:</span>
-            <a href="#">mail@htmlacademy.ru</a>
+            <a href="maulto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="user-list__item"><a class="user-list__login" href="login.html">Авторизация</a></li>
         </ul>
@@ -44,44 +45,29 @@
   </header>
 
   <main class="main-page">
-    <h1 class="visually-hidden">Сервис поиска попутчиков «Погнали?»</h1>
+    <h1 class="page__title">В путешествие с крутыми попутчиками!</h1>
 
     <section class="intro">
-      <h2 class="visually-hidden">Использование сервиса поиска попутчиков «Погнали?»</h2>
-      <b>В путешествие с крутыми попутчиками!</b>
-      <blockquote class="intro__comment-wrapper">
-        <p class="intro__comment">«Лучшее приложение, что я видел в жизни!»</p>
-        <cite class="intro__author-namer">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
-      </blockquote>
-      <table class="intro__list">
-        <tr>
-          <td class="intro__step-number">1</td>
-          <td class="intro__step">Выберите направление</td>
-        </tr>
-        <tr>
-          <td class="intro__step-number">2</td>
-          <td class="intro__step">Изучите идеи путешественников</td>
-        </tr>
-        <tr>
-          <td class="intro__step-number">3</td>
-          <td class="intro__step">Находите тех, кто похож на вас</td>
-        </tr>
-        <tr>
-          <td class="intro__step-number">4</td>
-          <td class="intro__step">Путешествуйте вместе!</td>
-        </tr>
-      </table>
-    </section>
-
-    <section class="about-site">
-      <h2 class="about-site__title">О сервисе</h2>
-      <p class="about-site__description">
+      <h2 class="intro__title">О сервисе</h2>
+      <p class="intro__description">
         Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
         Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
       </p>
-      <p class="about-site__description slogan">
+      <p class="intro__description slogan">
         А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
       </p>
+      <div class="intro__step">
+        <blockquote class="intro__comment-wrapper">
+          <p class="intro__comment">«Лучшее приложение, что я видел в жизни!»</p>
+          <cite class="intro__author-namer">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+        </blockquote>
+        <ol class="intro__list">
+          <li class="intro__step-number">Выберите направление</li>
+          <li class="intro__step-number">Изучите идеи путешественников</li>
+          <li class="intro__step-number">Находите тех, кто похож на вас</li>
+          <li class="intro__step-number">Путешествуйте вместе!</li>
+        </ol>
+      </div>
     </section>
 
     <section class="directions">
@@ -138,8 +124,8 @@
         <li class="companions__profile">
 
           <h3 class="companions__user-name"><a href="#">Таня Фирсова</a></h3>
-          <img class="companions__photo photo--tanya" src="https://via.placeholder.com/150x150" width="150"
-            height="150" alt="Таня Фирсова">
+          <img class="companions__photo photo--tanya" src="https://via.placeholder.com/150x150" width="150" height="150"
+            alt="Таня Фирсова">
           <div class="companions__level-wrapper">
             <span class="companions__level-value">99</span>
             <span class="companions__level">level</span>
@@ -159,8 +145,8 @@
         </li>
         <li class="companions__profile">
           <h3 class="companions__user-name"><a href="#">Петя Демин</a></h3>
-          <img class="companions__photo photo--peter" src="https://via.placeholder.com/150x150" width="150"
-            height="150" alt="Петя Демин">
+          <img class="companions__photo photo--peter" src="https://via.placeholder.com/150x150" width="150" height="150"
+            alt="Петя Демин">
           <div class="companions__level-wrapper">
             <span class="companions__level-value">80</span>
             <span class="companions__level">level</span>
@@ -193,29 +179,12 @@
       <h2 class="join__title"><a href="#">Добавьте свой профиль</a></h2>
       <!-- ??? Из ТЗ не понятно что это за картинка такая -->
       <div class="join__icon"></div>
-      <table class="join__rates-list">
-        <tr>
-          <td class="join__rate-number join__rate-number--first">1</td>
-          <td class="join__rate">
-            Базовое размещение
-            Бесплатно
-          </td>
-        </tr>
-        <tr>
-          <td class="join__rate-number join__rate-number--second">2</td>
-          <td class="join__rate">
-            Вывод на первых позициях
-            99 руб./мес
-          </td>
-        </tr>
-        <tr>
-          <td class="join__rate-number join__rate-number--third">3</td>
-          <td class="join__rate">
-            Кастомный цвет карточки
-            59 руб./мес
-          </td>
-        </tr>
-      </table>
+      <ol class="join__rates-list">
+        <li class="join__rate">Базовое размещение<br>Бесплатно</li>
+        <li class="join__rate">Вывод на первых позициях<br>99 руб./мес</li>
+        <li class="join__rate">Кастомный цвет карточки<br>59 руб./мес</li>
+        <li class="join__rate">Базовое размещение<br>Бесплатно</li>
+      </ol>
       <a class="join__business" href="business.html">Показать тарифы для бизнеса</a>
     </section>
 
