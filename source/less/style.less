@@ -1,0 +1,95 @@
+@import "variables.less";
+@import "mixins.less";
+@import "blooks/page-header.less";
+@import "blooks/main-nav.less";
+@import "blooks/page-list.less";
+@import "blooks/social.less";
+@import "blooks/intro.less";
+@import "blooks/directions.less";
+@import "blooks/companions.less";
+@import "blooks/join.less";
+@import "blooks/page-footer.less";
+@import "blooks/catalog.less";
+@import "blooks/move.less";
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.block {
+  box-sizing: content-box;
+}
+
+body {
+  width: 320px;
+  font-family: "BloggerSans", sans-serif;
+  font-weight: normal;
+  color: #161c35;
+  font-size: 16px;
+  line-height: 22px;
+  background: #ffffff;
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.reset-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.button {
+  font-size: 17px;
+  line-height: 30px;
+  color: #161c35;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  background-color: #ffd74b;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+}
+
+.page__title {
+  font-size: 36px;
+  line-height: 40px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #161c36;
+  text-align: center;
+  margin: 0;
+}
+
+.orange-title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ff8d30;
+}
