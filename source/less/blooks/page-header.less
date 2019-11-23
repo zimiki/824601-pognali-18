@@ -11,9 +11,9 @@
 }
 
 .page-header__logo {
-  flex-shrink: 0;
   width: 100px;
   height: 19px;
+  background-color: violet;
 }
 
 .page-header__main-nav {
@@ -33,8 +33,11 @@
 @media (min-width: @tablet-width) {
   .page-header {
     min-height: 100px;
+    align-items: flex-start;
     background-color: #182044;
-    padding: 0 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .page-header__logo {
@@ -52,7 +55,9 @@
   .page-header {
     min-height: 100px;
     background-color: #161c34;
-    padding: 0 60px;
+    padding-top: 47px;
+    padding-right: 60px;
+    padding-left: 60px;
   }
 
   .page-header__logo {
@@ -61,7 +66,9 @@
   }
 
   .page-header__main-nav {
+    display: flex;
     width: 740px;
+    align-items: center;
   }
 
   .page-header__user-block {

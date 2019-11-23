@@ -1,14 +1,21 @@
 .main-nav {
+
   background-color: pink;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .main-nav__wrapper {
-  display: none;
+  display: none; /*временно*/
+  position: absolute;
+  width: 320px;
+  top: 0;
+  left: 0;
+  /*display: flex;*/
+  flex-direction: column;
   color: #192144;
   background-color: #ffffff;
-  border: 2px yellow solid;
+  z-index: 2;
 }
 
 .main-nav__toggle {
@@ -22,13 +29,10 @@
   border: 0;
 }
 
-.main-nav .main-nav__page-list {
-  margin-bottom: 53px;
-}
-
 .main-nav__user-list {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .main-nav__user-login {
@@ -72,6 +76,32 @@
   margin-left: 15px;
 }
 
-.main-nav .main-nav__user-list {
-  margin-bottom: 30px;
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    display: flex; /*потом убрать*/
+    position: static;
+    width: 630px;
+    background-color: transparent;
+  }
+
+  .main-nav__toggle {
+    width: 60px;
+    height: 2px;
+    background: #ffffff;
+    margin-right: 45px;
+  }
+
+  .main-nav__user-list {
+    display: none;
+  }
+
+  .main-nav .main-nav__social {
+    display: none;
+  }
 }
