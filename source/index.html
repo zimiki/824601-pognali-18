@@ -10,20 +10,20 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header container">
     <a class="page-header__logo logo">
       <img class="logo__image logo__image--white" src="img/logo-mobile-white@1x.png" width="100" height="19"
         alt="Сервис поиска попутчиков 'Погнали?'">
     </a>
-    <nav class="main-nav">
+    <nav class="page-header__main-nav main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__page-list page-list reset-list">
+        <ul class="main-nav__page-list page-list">
           <li class="page-list__item"><a class="page-list__link" href="#">О сервисе</a></li>
           <li class="page-list__item"><a class="page-list__link" href="form.html">Направления</a></li>
           <li class="page-list__item"><a class="page-list__link" href="catalog.html">Попутчики</a></li>
         </ul>
-        <ul class="main-nav__user-list reset-list">
+        <ul class="main-nav__user-list">
           <li class="main-nav__user-login">
             <a class="button" href="login.html">Авторизация</a>
           </li>
@@ -36,7 +36,7 @@
             <a class="main-nav__email-link" href="maulto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
-        <ul class="main-nav__social social reset-list">
+        <ul class="main-nav__social social">
           <li><a class="social__link social__link--fb social__link--light"
               href="https://www.facebook.com/htmlacademy">Facebook</a></li>
           <li><a class="social__link social__link--vk social__link--light" href="https://vk.com/htmlacademy">VK</a></li>
@@ -45,95 +45,109 @@
         </ul>
       </div>
     </nav>
+    <div class="page-header__user-block user-block">
+      <div class="user-block__wrapper">
+        <a class="user-block__email" href="maulto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a class="user-block__phone" href="tel:+78005558628">8 800 555-86-28</a>
+      </div>
+      <a class="user-block__login button" href="login.html">Авторизация</a>
+    </div>
   </header>
 
-  <main class="main-page">
+  <main class="main-page container">
     <h1 class="page__title">В путешествие с крутыми попутчиками!</h1>
     <section class="intro">
-      <div class="into__about">
-        <h2 class="intro__title orange-title">О сервисе</h2>
-        <p class="intro__description">
-          Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
-          Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
-        </p>
-        <p class="intro__slogan">
-          А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
-        </p>
+
+      <div class="intro__about">
+        <div class="intro__about-wrapper">
+          <h2 class="intro__title orange-title">О сервисе</h2>
+          <p class="intro__description">
+            Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
+            Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+          </p>
+          <p class="intro__slogan">
+            А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+          </p>
+          <a class="intro__all button" href="#">Подробнее</a>
+        </div>
       </div>
+
       <div class="intro__step-wrapper">
         <blockquote class="intro__comment-wrapper">
           <p class="intro__comment">«Лучшее приложение, что я видел в жизни!»</p>
           <cite class="intro__author-name">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
         </blockquote>
-        <ol class="intro__step-list reset-list">
+        <ol class="intro__step-list">
           <li class="intro__step intro__step--first">Выберите направление</li>
           <li class="intro__step intro__step--second">Изучите идеи путешественников</li>
           <li class="intro__step intro__step--third">Находите тех, кто похож на вас</li>
           <li class="intro__step intro__step--four">Путешествуйте вместе!</li>
         </ol>
       </div>
+
     </section>
 
     <section class="directions">
-      <h2 class="directions__title orange-title">Направления</h2>
-      <p class="directions__description">
-        Мы не продаем туры и ничего не рекламируем.
-        Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
-      </p>
-      <ul class="directions__list reset-list">
+      <div class="direction__wrapper">
+        <h2 class="directions__title orange-title">Направления</h2>
+        <p class="directions__description">
+          Мы не продаем туры и ничего не рекламируем.
+          Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+        </p>
+      </div>
+      <ul class="directions__list">
         <li class="directions__item">
-            <h3 class="directions__name">Таиланд</h3>
-            <img class="directions__image" src="img/thailand-mobile@1x.jpg" width="270" height="110"
-              alt="Фото из Таиланда">
-            <div class="directions__flag flag flag--thailand"></div>
-            <p class="directions__slogan">Джунгли зовут!</p>
-            <span class="directions__subscriber">18321</span>
+          <h3 class="directions__name">Таиланд</h3>
+          <img class="directions__image" src="img/thailand-mobile@1x.jpg" width="270" height="110"
+            alt="Фото из Таиланда">
+          <div class="directions__flag flag flag--thailand"></div>
+          <p class="directions__slogan">Джунгли зовут!</p>
+          <span class="directions__subscriber">18321</span>
         </li>
         <li class="directions__item">
-            <h3 class="directions__name">Франция</h3>
-            <img class="directions__image" src="img/france-mobile@1x.jpg" width="270" height="110"
-              alt="Фото из Франции">
-            <div class="directions__flag flag flag--france"></div>
-            <p class="directions__slogan">Трэ бьен, манифик!</p>
-            <span class="directions__subscriber">12518</span>
+          <h3 class="directions__name">Франция</h3>
+          <img class="directions__image" src="img/france-mobile@1x.jpg" width="270" height="110" alt="Фото из Франции">
+          <div class="directions__flag flag flag--france"></div>
+          <p class="directions__slogan">Трэ бьен, манифик!</p>
+          <span class="directions__subscriber">12518</span>
         </li>
         <li class="directions__item">
-            <h3 class="directions__name">Чехия</h3>
-            <img class="directions__image" src="img/czech-mobile@1x.jpg" width="270" height="110"
-              alt="Фото из Чехии">
-            <div class="directions__flag flag flag--czech"></div>
-            <p class="directions__slogan">Закоулки старой Европы</p>
-            <span class="directions__subscriber">5326</span>
+          <h3 class="directions__name">Чехия</h3>
+          <img class="directions__image" src="img/czech-mobile@1x.jpg" width="270" height="110" alt="Фото из Чехии">
+          <div class="directions__flag flag flag--czech"></div>
+          <p class="directions__slogan">Закоулки старой Европы</p>
+          <span class="directions__subscriber">5326</span>
         </li>
       </ul>
       <a class="directions__all button" href="form.html">Показать все</a>
     </section>
 
     <section class="companions">
-      <h2 class="companions__title orange-title">Попутчики</h2>
-      <p class="companions__description">
-        Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-        дному нужен пляж и коктейль, а другому маршрут для хайкинга.
-      </p>
-      <b class="companions__slogan">
-        Теперь можно легко найти единомышленников!
-      </b>
-      <ul class="companions__list reset-list">
+      <div class="companions__wrapper">
+        <h2 class="companions__title orange-title">Попутчики</h2>
+        <p class="companions__description">
+          Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+          дному нужен пляж и коктейль, а другому маршрут для хайкинга.
+        </p>
+        <b class="companions__slogan">
+          Теперь можно легко найти единомышленников!
+        </b>
+      </div>
+      <ul class="companions__list">
         <li class="companions__profile">
           <h3 class="companions__user-name"><a class="companions__user-link" href="#">Таня Фирсова</a></h3>
-          <img class="companions__photo" src="img/firsova-desktop@1x.jpg" width="270" height="270"
-            alt="Таня Фирсова">
+          <img class="companions__photo" src="img/firsova-desktop@1x.jpg" width="270" height="270" alt="Таня Фирсова">
           <div class="companions__level-wrapper">
             <span class="companions__level-value">99</span>
             <span class="companions__level">level</span>
           </div>
-          <ul class="companions__visit-list reset-list">
+          <ul class="companions__visit-list">
             <li class="companions__country flag flag--sri-lanka">Шри-Ланка</li>
             <li class="companions__country flag flag--thailand">Тайланд</li>
             <li class="companions__country flag flag--seychelles">Сейшелы</li>
           </ul>
           <p class="companions__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-          <ul class="companions__move move reset-list">
+          <ul class="companions__move move">
             <li class="move__item move__item--avia move__item--active">Самолет</li>
             <li class="move__item move__item--bus">Автобус</li>
             <li class="move__item move__item--bike">Велосипед</li>
@@ -142,23 +156,17 @@
         </li>
         <li class="companions__profile">
           <h3 class="companions__user-name"><a class="companions__user-link" href="#">Петя Демин</a></h3>
-          <img class="companions__photo" src="img/demin-desktop@1x.jpg" width="270" height="270"
-            alt="Петя Демин">
+          <img class="companions__photo" src="img/demin-desktop@1x.jpg" width="270" height="270" alt="Петя Демин">
           <div class="companions__level-wrapper">
             <span class="companions__level-value">80</span>
             <span class="companions__level">level</span>
           </div>
-          <ul class="companions__visit-list reset-list">
+          <ul class="companions__visit-list">
             <li class="companions__country flag flag--belgium">Бельгия</li>
             <li class="companions__country flag flag--czech">Чехия</li>
           </ul>
-          <ul class="companions__tags-list">
-            <li>#бургер</li>
-            <li>#бар</li>
-            <li>#футбол</li>
-            <li>#крафт</li>
-          </ul>
-          <ul class="companions__move move reset-list">
+          <p class="companions__tags">#бургер #бар #футбол #крафт</p>
+          <ul class="companions__move move">
             <li class="move__item move__item--avia move__item--active">Самолет</li>
             <li class="move__item move__item--bus move__item--active">Автобус</li>
             <li class="move__item move__item--bike">Велосипед</li>
@@ -166,23 +174,39 @@
           </ul>
         </li>
       </ul>
-
-
-
-      <a class="companion__all button" href="catalog.html">Показать всех</a>
+      <a class="companions__all button" href="catalog.html">Показать всех</a>
     </section>
 
     <section class="join">
       <h2 class="join__title"><a class="orange-title" href="#">Добавьте свой профиль</a></h2>
       <!-- ??? Из ТЗ не понятно что это за картинка такая -->
       <div class="join__icon"></div>
-      <ol class="join__rates-list reset-list">
+      <!--
+      <ol class="join__rates-list">
         <li class="join__rate">Базовое размещение<br>Бесплатно</li>
         <li class="join__rate">Вывод на первых позициях<br>99 руб./мес</li>
         <li class="join__rate">Кастомный цвет карточки<br>59 руб./мес</li>
-        <li class="join__rate">Базовое размещение<br>Бесплатно</li>
-      </ol>
-      <a class="join__business" href="business.html">Показать тарифы для бизнеса</a>
+      </ol>  -->
+
+      <table class="join__rates-list">
+        <tr class="join__rate">
+          <td class="join__rate-number">1</td>
+          <td class="join__rate-name">Базовое размещение</td>
+          <td class="join__rate-price">Бесплатно</td>
+        </tr>
+        <tr class="join__rate">
+          <td class="join__rate-number">2</td>
+          <td class="join__rate-name">Вывод на первых позициях</td>
+          <td class="join__rate-price">99 руб./мес</td>
+        </tr>
+        <tr class="join__rate">
+          <td class="join__rate-number">3</td>
+          <td class="join__rate-name">Кастомный цвет карточки</td>
+          <td class="join__rate-price">59 руб./мес</td>
+        </tr>
+      </table>
+
+      <a class="join__business-link" href="business.html">Показать тарифы для бизнеса</a>
     </section>
 
     <!-- Здесь будет раздел "Заинтересовались?"-->
@@ -190,11 +214,12 @@
 
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <a class="page-footer__logo logo">
-      <img class="logo__image logo__image--blue" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Сервис поиска попутчиков 'Погнали?'">
+      <img class="logo__image logo__image--blue" src="img/logo-mobile-blue@1x.png" width="100" height="19"
+        alt="Сервис поиска попутчиков 'Погнали?'">
     </a>
-    <ul class="page-footer__social social reset-list">
+    <ul class="page-footer__social social">
       <li class="social__item"><a class="social__link social__link--fb"
           href="https://www.facebook.com/htmlacademy">Facebook</a></li>
       <li class="social__item"><a class="social__link social__link--vk" href="https://vk.com/htmlacademy">VK</a></li>
@@ -210,22 +235,22 @@
 
 
   <section class="business-modal">
-    <h2 class="business-modal_title">Бизнес-тарифы</h2>
+    <h2 class="business-modal_title orange-title">Бизнес-тарифы</h2>
     <ul class="business-modal__rates-list">
       <li class="business-modal__rate">
-        Реклама у блоггера<br>
-        300 000 руб./пост</li>
+        Реклама у блоггера<span>300 000 руб./пост</span>
+      </li>
       <li class="business-modal__rate">
-        Накрутка подписчиков<br>
-        от 1 руб./шт.</li>
+        Накрутка подписчиков<span>от 1 руб./шт.</span>
+      </li>
       <li class="business-modal__rate">
-        Лайки от ботов<br>
-        от 20 коп./лайк</li>
+        Лайки от ботов<span>от 20 коп./лайк</span>
+      </li>
       <li class="business-modal__rate">
-        Ваш продакт-плейсмент<br>
-        Индивидуально</li>
+        Ваш продакт-плейсмент<span>Индивидуально</span>
+      </li>
     </ul>
-    <button class="business-modal__close" type="button">Закрыть окно</button>
+    <button class="business-modal__close button" type="button">Закрыть окно</button>
   </section>
 
 </body>

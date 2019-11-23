@@ -1,0 +1,37 @@
+.user-block {
+  display: flex;
+  align-items: flex-start;
+}
+
+.user-block__wrapper {
+  display: flex;
+}
+
+.user-block__email,
+.user-block__phone {
+  width: 41px;
+  height: 41px;
+  font-size: 0;
+  border-radius: 50%;
+  background-color: royalblue;
+}
+
+
+.user-block .user-block__login {
+  width: 189px;
+  border-radius: 21px;
+  padding-top: 7px;
+  padding-bottom: 3px;
+}
+
+@media (min-width: @tablet-width) {
+  .user-block__wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-block__wrapper {
+    display: flex;
+  }
+}

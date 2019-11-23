@@ -1,4 +1,6 @@
 @import "variables.less";
+@import "blooks/container.less";
+@import "blooks/user-block.less";
 @import "mixins.less";
 @import "blooks/page-header.less";
 @import "blooks/main-nav.less";
@@ -11,6 +13,7 @@
 @import "blooks/page-footer.less";
 @import "blooks/catalog.less";
 @import "blooks/move.less";
+@import "blooks/business-modal.less";
 
 *,
 *::after,
@@ -27,14 +30,14 @@ html {
 }
 
 body {
-  width: 320px;
+  min-width: 320px;
   font-family: "BloggerSans", sans-serif;
   font-weight: normal;
   color: #161c35;
   font-size: 16px;
   line-height: 22px;
-  background: #ffffff;
   margin-bottom: 50px;
+  background-color: yellowgreen;
 }
 
 a {
@@ -57,12 +60,6 @@ img {
   overflow: hidden;
 }
 
-.reset-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .button {
   font-size: 17px;
   line-height: 30px;
@@ -77,19 +74,62 @@ img {
   border-radius: 25px;
 }
 
+.main-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
 .page__title {
+  display: flex;
   font-size: 36px;
   line-height: 40px;
   color: #ffffff;
   font-weight: bold;
-  background-color: #161c36;
   text-align: center;
+  background-color: #161c36;
   margin: 0;
 }
 
 .orange-title {
+  font-style: inherit;
   font-size: 24px;
   line-height: 24px;
   font-weight: bold;
   color: #ff8d30;
+}
+
+
+@media (min-width: @tablet-width) {
+  body {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .page__title {
+    font-size: 60px;
+    line-height: 70px;
+    background-color: #182044;
+    padding-right: 145px;
+    padding-left: 145px;
+
+    margin: 0 auto;
+  }
+
+  .orange-title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .page__title {
+    background-color: transparent;
+    position: absolute;
+    width: 420px;
+    top: 40px;
+    left: 40px;
+    padding: 0;
+  }
 }

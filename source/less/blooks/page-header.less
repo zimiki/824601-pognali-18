@@ -1,3 +1,72 @@
 .page-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-height: 65px;
+  padding-left: 24px;
+  padding-top: 25px;
+  padding-right: 24px;
   background-color: #161c36;
+  border: 1px red solid;
+}
+
+.page-header__logo {
+  flex-shrink: 0;
+  width: 100px;
+  height: 19px;
+}
+
+.page-header__main-nav {
+  width: 30px;
+  min-height: 30px;
+}
+
+.page-header__user-block {
+  width: 270px;
+  min-height: 40px;
+  position: absolute;
+  left: 25px;
+  top: 455px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    min-height: 100px;
+    background-color: #182044;
+    padding: 0 40px;
+  }
+
+  .page-header__logo {
+    width: 166px;
+    height: 42px;
+  }
+
+  .page-header__user-block {
+    position: static;
+    width: 188px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    min-height: 100px;
+    background-color: #161c34;
+    padding: 0 60px;
+  }
+
+  .page-header__logo {
+    width: 200px;
+    height: 52px;
+  }
+
+  .page-header__main-nav {
+    width: 740px;
+  }
+
+  .page-header__user-block {
+    flex-shrink: 0;
+    position: static;
+    width: 292px;
+  }
 }

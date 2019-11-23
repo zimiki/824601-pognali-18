@@ -1,4 +1,5 @@
 .social {
+  .reset-list();
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -33,4 +34,23 @@
 
 .social__link--light {
   background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .social__link {
+    width: 60px;
+    height: 60px;
+  }
+
+  .social__link--fb {
+    background-size: auto 28px;
+  }
+
+  .social__link--vk {
+    background-size: auto 16px;
+  }
+
+  .social__link--insta {
+    background-size: auto 23px;
+  }
 }
