@@ -10,41 +10,42 @@
 </head>
 
 <body>
-    <header class="page-header container">
-        <a class="page-header__logo logo" href="index.html">
-          <img class="logo__image logo__image--white" src="img/logo-mobile-white@1x.png" width="100" height="19"
-            alt="Сервис поиска попутчиков 'Погнали?'">
-        </a>
-        <nav class="page-header__main-nav main-nav">
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__page-list page-list">
-                <li class="page-list__item"><a class="page-list__link" href="index.html">О сервисе</a></li>
-                <li class="page-list__item"><a class="page-list__link" href="form.html">Направления</a></li>
-                <li class="page-list__item"><a class="page-list__link">Попутчики</a></li>
-              </ul>
-              <ul class="main-nav__user-list user-list">
-                <li class="user-list__item-wrapper user-list__item-wrapper--login"><a class="user-list__login button" href="login.html">Авторизация</a></li>
-                <li class="user-list__item-wrapper">
-                  <span class="user-list__item user-list__item--phone">Телефон:</span>
-                  <a class="user-list__link" href="tel:+78005558628">8 800 555-86-28</a>
-                </li>
-                <li class="user-list__item-wrapper">
-                  <span class="user-list__item user-list__item--email">Почта:</span>
-                  <a class="user-list__link" href="maulto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-                </li>
-              </ul>
-              <ul class="main-nav__social social">
-                <li><a class="social__link social__link--fb social__link--light"
-                    href="https://www.facebook.com/htmlacademy">Facebook</a></li>
-                <li><a class="social__link social__link--vk social__link--light" href="https://vk.com/htmlacademy">VK</a>
-                </li>
-                <li><a class="social__link social__link--insta social__link--light"
-                    href="https://www.instagram.com/htmlacademy">Instagram</a></li>
-              </ul>
-            </div>
-          </nav>
-      </header>
+  <header class="page-header container">
+    <a class="page-header__logo logo" href="index.html">
+      <img class="logo__image logo__image--white" src="img/logo-mobile-white@1x.png" width="100" height="19"
+        alt="Сервис поиска попутчиков 'Погнали?'">
+    </a>
+    <nav class="page-header__main-nav main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__page-list page-list">
+          <li class="page-list__item"><a class="page-list__link" href="index.html">О сервисе</a></li>
+          <li class="page-list__item"><a class="page-list__link" href="form.html">Направления</a></li>
+          <li class="page-list__item"><a class="page-list__link">Попутчики</a></li>
+        </ul>
+        <ul class="main-nav__user-list user-list">
+          <li class="user-list__item-wrapper user-list__item-wrapper--login"><a class="user-list__login button"
+              href="login.html">Авторизация</a></li>
+          <li class="user-list__item-wrapper">
+            <span class="user-list__item user-list__item--phone">Телефон:</span>
+            <a class="user-list__link" href="tel:+78005558628">8 800 555-86-28</a>
+          </li>
+          <li class="user-list__item-wrapper">
+            <span class="user-list__item user-list__item--email">Почта:</span>
+            <a class="user-list__link" href="maulto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <ul class="main-nav__social social">
+          <li><a class="social__link social__link--fb social__link--light"
+              href="https://www.facebook.com/htmlacademy">Facebook</a></li>
+          <li><a class="social__link social__link--vk social__link--light" href="https://vk.com/htmlacademy">VK</a>
+          </li>
+          <li><a class="social__link social__link--insta social__link--light"
+              href="https://www.instagram.com/htmlacademy">Instagram</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
   <main class="container">
     <h1 class="page__title page__title--inner">Попутчики</h1>
@@ -53,38 +54,123 @@
 
     <section class="catalog">
       <h2 class="visually-hidden">Список попутчиков</h2>
-      <ul class="catalog__list reset-list">
+      <ul class="catalog__list">
         <li class="catalog__profile">
-          <h3 class="catalog__user-name"><a class="catalog__user-link" href="#">Таня Фирсова</a></h3>
-          <img class="catalog__photo" src="img/firsova-mobile@1x.jpg" width="70" height="70"
-            alt="Таня Фирсова">
-          <span class="catalog__user-likes">1,5 М</span>
-          <p class="catalog__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-          <h4 class="catalog__heading">Хочет посетить:</h4>
-          <ul class="catalog__visit-list reset-list">
-            <li class="catalog__country flag flag--sri-lanka">Шри-Ланка</li>
-            <li class="catalog__country flag flag--thailand">Таиланд</li>
-            <li class="catalog__country flag flag--seychelles">Сейшелы</li>
-          </ul>
-          <div class="catalog__bottom-wrapper">
-            <div class="catalog__move-wrapper">
-              <h4 class="catalog__heading">Транспорт:</h4>
-              <ul class="catalog__move move">
-                <li class="move__item move__item--avia move__item--active">Самолет</li>
-                <li class="move__item move__item--bus">Автобус</li>
-                <li class="move__item move__item--bike">Велосипед</li>
-                <li class="move__item move__item--onfoot">Пешком</li>
+          <div class="catalog__user">
+              <h3 class="catalog__user-name"><a class="catalog__user-link" href="#">Таня Фирсова</a></h3>
+              <img class="catalog__user-photo" src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Таня Фирсова">
+              <p class="catalog__user-tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+              <div class="catalog__join-wrapper">
+                <a class="catalog__call button" href="respond.html">Позвать!</a>
+                <span class="catalog__likes">1,5 М</span>
+              </div>
+          </div>
+          <div class="catalog__info-wrapper">
+            <div class="catalog__visit visit">
+              <h4 class="visit__title">Хочет посетить:</h4>
+              <ul class="visit__list">
+                <li class="visit__item flag flag--sri-lanka">Шри-Ланка</li>
+                <li class="visit__item flag flag--thailand">Таиланд</li>
+                <li class="visit__item flag flag--seychelles">Сейшелы</li>
               </ul>
             </div>
-            <div class="catalog__level-wrapper">
-              <h4 class="catalog__heading">Левел:</h4>
-              <span class="catalog__user-level">99</span>
+            <div class="catalog__bottom-wrapper">
+              <div class="catalog__move move">
+                <h4 class="move__title">Транспорт:</h4>
+                <ul class="move__list">
+                  <li class="move__item move__item--avia move__item--active">Самолет</li>
+                  <li class="move__item move__item--bus">Автобус</li>
+                  <li class="move__item move__item--bike">Велосипед</li>
+                  <li class="move__item move__item--onfoot">Пешком</li>
+                </ul>
+              </div>
+              <div class="catalog__level level">
+                <h4 class="level__title">Левел:</h4>
+                <span class="level__value">99</span>
+              </div>
             </div>
           </div>
-          <a class="catalog__call button" href="respond.html">Позвать!</a>
+
         </li>
 
-        <!-- Сделаю остальных также, если это верна яразметка -->
+        <li class="catalog__profile">
+          <div class="catalog__user">
+              <h3 class="catalog__user-name"><a class="catalog__user-link" href="#">Таня Фирсова</a></h3>
+              <img class="catalog__user-photo" src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Таня Фирсова">
+              <p class="catalog__user-tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+              <div class="catalog__join-wrapper">
+                <a class="catalog__call button" href="respond.html">Позвать!</a>
+                <span class="catalog__likes">1,5 М</span>
+              </div>
+          </div>
+          <div class="catalog__info-wrapper">
+            <div class="catalog__visit visit">
+              <h4 class="visit__title">Хочет посетить:</h4>
+              <ul class="visit__list">
+                <li class="visit__item flag flag--sri-lanka">Шри-Ланка</li>
+                <li class="visit__item flag flag--thailand">Таиланд</li>
+                <li class="visit__item flag flag--seychelles">Сейшелы</li>
+              </ul>
+            </div>
+            <div class="catalog__bottom-wrapper">
+              <div class="catalog__move move">
+                <h4 class="move__title">Транспорт:</h4>
+                <ul class="move__list">
+                  <li class="move__item move__item--avia move__item--active">Самолет</li>
+                  <li class="move__item move__item--bus">Автобус</li>
+                  <li class="move__item move__item--bike">Велосипед</li>
+                  <li class="move__item move__item--onfoot">Пешком</li>
+                </ul>
+              </div>
+              <div class="catalog__level level">
+                <h4 class="level__title">Левел:</h4>
+                <span class="level__value">99</span>
+              </div>
+            </div>
+          </div>
+
+        </li><li class="catalog__profile">
+          <div class="catalog__user">
+              <h3 class="catalog__user-name"><a class="catalog__user-link" href="#">Таня Фирсова</a></h3>
+              <img class="catalog__user-photo" src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Таня Фирсова">
+              <p class="catalog__user-tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+              <div class="catalog__join-wrapper">
+                <a class="catalog__call button" href="respond.html">Позвать!</a>
+                <span class="catalog__likes">1,5 М</span>
+              </div>
+          </div>
+          <div class="catalog__info-wrapper">
+            <div class="catalog__visit visit">
+              <h4 class="visit__title">Хочет посетить:</h4>
+              <ul class="visit__list">
+                <li class="visit__item flag flag--sri-lanka">Шри-Ланка</li>
+                <li class="visit__item flag flag--thailand">Таиланд</li>
+                <li class="visit__item flag flag--seychelles">Сейшелы</li>
+              </ul>
+            </div>
+            <div class="catalog__bottom-wrapper">
+              <div class="catalog__move move">
+                <h4 class="move__title">Транспорт:</h4>
+                <ul class="move__list">
+                  <li class="move__item move__item--avia move__item--active">Самолет</li>
+                  <li class="move__item move__item--bus">Автобус</li>
+                  <li class="move__item move__item--bike">Велосипед</li>
+                  <li class="move__item move__item--onfoot">Пешком</li>
+                </ul>
+              </div>
+              <div class="catalog__level level">
+                <h4 class="level__title">Левел:</h4>
+                <span class="level__value">99</span>
+              </div>
+            </div>
+          </div>
+
+        </li>
+
+
+
+
+
 
       </ul>
 

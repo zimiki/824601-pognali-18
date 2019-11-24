@@ -1,9 +1,13 @@
-.move {
+
+.move__title {
+  font-weight: normal;
+  text-transform: lowercase;
+}
+
+.move__list {
+  .reset-list();
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .move__item {
@@ -31,4 +35,21 @@
 
 .move__item--onfoot {
   background-image: url("../img/run.svg");
+}
+
+
+@media (min-width: @tablet-width) {
+  .move__title {
+    display: none;
+  }
+
+  .move__list {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .move__list {
+    flex-direction: row;
+  }
 }
