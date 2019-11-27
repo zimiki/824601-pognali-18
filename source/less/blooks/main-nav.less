@@ -1,12 +1,16 @@
 .main-nav {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .main-nav__wrapper {
-  position: relative;
   display: flex;
   flex-direction: column;
+  width: 320px;
+  min-height: 500px;
   color: #192144;
   background-color: #ffffff;
   padding-right: 25px;
@@ -14,15 +18,106 @@
 }
 
 .main-nav__toggle {
-  font-size: 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  display: block;
   width: 30px;
   height: 30px;
-  background-image: url("../img/menu.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  border: 0;
+  cursor: pointer;
+  border: none;
+  background-color: red;
 }
+
+.main-nav--closed .main-nav__toggle {
+  background-image: url("../img/menu.svg");
+  background-repeat: no-repeat;
+  background-size: 25px auto;
+  background-position: 3px 9px;
+}
+
+.main-nav--closed .main-nav__wrapper {
+  display: none;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14;
+    left: -3px;
+    width: 28px;
+    height: 2px;
+    background-color: #cccccc;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: #9ba0b6;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: #161c35;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav__contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
+  margin-left: 25px;
+
+}
+
+.main-nav__contact {
+  height: 45px;
+  vertical-align: middle;
+  position: relative;
+  font-size: 16px;
+  line-height: 22px;
+  color: #192144;
+  padding-left: 37px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 46px;
+    height: 46px;
+    top: 0;
+    left: -40px;
+    font-size: 0;
+    background-color: #121936;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+  }
+}
+/*
+  &--phone::before {
+    background-image: url("../img/contacts-phone.svg");
+    background-size: auto 21px;
+  }
+
+  &--email::before {
+    background-image: url("../img/contacts-mail.svg");
+    background-size: auto 13px;
+  }*/
+
 
 @media (min-width: @tablet-width) {
   .main-nav__wrapper {

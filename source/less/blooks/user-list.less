@@ -2,45 +2,16 @@
   .reset-list();
   display: flex;
   flex-direction: column;
+  margin-top: 49px;
+  margin-bottom: 50px;
+}
+
+.user-list__item {
+  display: flex;
 }
 
 .user-list__login {
   width: 100%;
-  margin-top: 60px;
-  margin-bottom: 50px;
-}
-
-.user-list__item-wrapper {
-  display: flex;
-}
-
-.user-list__item {
-  width: 46px;
-  height: 46px;
-  font-size: 0;
-  background-color: #ffd74b;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-}
-
-
-.user-list__item--phone {
-  background-image: url("../img/contacts-phone.svg");
-  background-size: auto 21px;
-}
-
-.user-list__item--email {
-  background-image: url("../img/contacts-mail.svg");
-  background-size: auto 13px;
-}
-
-.user-list__link {
-  align-self: center;
-  font-size: 16px;
-  line-height: 22px;
-  color: #192144;
-  margin-left: 15px;
 }
 
 @media (min-width: @tablet-width) {
@@ -61,13 +32,5 @@
 
   .user-list__login {
     position: static;
-  }
-
-  .user-list__item-wrapper--login {
-    order: 1;
-  }
-
-  .user-list__link {
-    display: none;
   }
 }
